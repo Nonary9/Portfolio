@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/index.css">
+        <title>code_breaker</title>
+
+        
+        <!-- CSS読み込み -->
+        <link rel="stylesheet" type="text/css" href="lib/onsenui/css/onsenui.css">
+        <link rel="stylesheet" type="text/css" href="lib/onsenui/css/onsen-css-components.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+
+        <!-- アイコン -->
+        <link rel="stylesheet" type="text/css" href="lib/onsenui/css/ionicons/css/ionicons.css">
+        <link rel="stylesheet" type="text/css" href="lib/onsenui/css/ionicons/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="lib/onsenui/css/ionicons/css/ionicons-core.css">
+    </head>
+    <body>
+        <div class="app">
+            <h1>Nonary</h1>
+        </div>
+        <ons-splitter>
+            <ons-splitter-side id="menu" side="right" width="220px" collapse>
+              <ons-page>
+                <ons-list>
+                  <ons-list-item id="reset_btn" tappable>
+                    Novo jogo
+                  </ons-list-item>
+                  <ons-list-item id="exit_btn" tappable>
+                    Sair do jogo
+                  </ons-list-item>
+                </ons-list>
+              </ons-page>
+            </ons-splitter-side>
+            <ons-splitter-content id="content">
+                <ons-navigator id="navi" page="title.html"></ons-navigator>
+            </ons-splitter-content>
+          </ons-splitter>
+
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/title.js"></script>
+        <script src="js/game.js"></script>
+        <script type="text/javascript" src="lib/onsenui/js/onsenui.js"></script>
+        <script src="js/menuCmd.js"></script>
+    </body>
+</html>

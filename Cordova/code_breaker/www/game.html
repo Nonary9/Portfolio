@@ -1,0 +1,43 @@
+
+  <ons-page id="game.html">
+    <ons-toolbar>
+      <div class="left" id="restTemp"></div>
+      <div class="right">
+        <ons-toolbar-button modifier="quiet" id="menu_btn">
+          <ons-icon icon="md-menu"></ons-icon>
+        </ons-toolbar-button>
+      </div>
+    </ons-toolbar>
+    <div class="squares">
+      <div class="square" id="square1">?</div>
+      <div class="square" id="square2">?</div>
+      <div class="square" id="square3">?</div>
+    </div>
+    <div id="info" class="info">
+    </div>
+    <div class="answer">
+      <ons-select id="sel1">
+        <option></option>
+      </ons-select>
+      <ons-select id="sel2" modifier="material">
+        <option></option>
+      </ons-select>
+      <ons-select id="sel3" modifier="material">
+        <option></option>
+      </ons-select>
+
+      <ons-button id="judge_btn" class="judge_btn">
+        <ons-icon icon="ion-ios-checkmark"></ons-icon>
+      </ons-button>
+    </div>
+
+    
+    <ons-dialog id="start_dialog">
+      <div style="text-align: center; padding: 10px;">
+        <p>
+          <ons-button id="start_button">Start</ons-button>
+        </p>
+      </div>
+    </ons-dialog>
+  </ons-page>
+
